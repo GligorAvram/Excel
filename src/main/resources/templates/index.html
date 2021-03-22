@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="POST" th:action="@{/upload}" enctype="multipart/form-data">
+    <div class="form-group">
+        Services start at cell:
+<!--        <input type="number" name="startCell"/>-->
+        <input type="number" name="startCell" class="form-control" id="number" aria-describedby="number" value="21">
+        <br>
+    </div>
+    <div class="form-group">
+        File to upload:
+        <input type="file" name="spreadsheet"/>
+        <br>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+<!--    <input type="submit" value="Upload"/>-->
+</form>
+
+</body>
+</html>
